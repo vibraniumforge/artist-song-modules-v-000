@@ -3,7 +3,7 @@ require 'pry'
 class Artist
   attr_accessor :name
   attr_reader :songs
-  
+
   extend Memorable::ClassMethods
   extend Findable::ClassMethods
   include Memorable::InstanceMethods
@@ -12,7 +12,7 @@ class Artist
 
   def initialize
     super
-    @@artists<<self
+    # @@artists<<self
     @songs = []
   end
 
